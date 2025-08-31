@@ -192,3 +192,7 @@ footer p {
   transform: scale(1.2);
   background: #f3e9fa;
 }
+.destacado {
+  font-weight: bold;
+  background-color: #a678d6;
+}
