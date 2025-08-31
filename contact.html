@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contacto</title>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Productos</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Galletas</td>
+            <td>$2.000</td>
+          </tr>
+          <tr>
+            <td>Jugos</td>
+            <td>$3.000</td>
+          </tr>
+          <tr>
+            <td>Dulces</td>
+            <td>$1.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Valentina" required><br><br>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" placeholder="valentinaruiz1104@gmail.com" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="3052428880" pattern="[0-9]{10}" required><br><br>
+        <fieldset> <legend>Preferencias</legend> <label for="tema">Elige un tema</label><br /> <select id="tema" name="tema" required> <option value="">-- Selecciona --</option> <option value="tecnologia">Tecnología</option> <option value="idiomas">Idiomas</option> <option value="educacion">Educación</option> </select><br /><br /> 
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje..." required></textarea><br><br>
+        <label> <input type="checkbox" name="terminos" required /> Acepto términos </label> </fieldset>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Valentina Ruiz. Todos los derechos reservados</p>
+   <div class="social-footer">
+    <a href="https://www.instagram.com/v.r_58/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@v.r_58" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://wa.me/573052428880" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</footer>
+</body>
+</html>
+

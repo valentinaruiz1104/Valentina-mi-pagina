@@ -1,0 +1,194 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f4fc; /* lila muy clarito */
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Encabezado ===== */
+header {
+  background: #a678d6; /* lila fuerte */
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe9ff; /* lila clarito al pasar */
+}
+
+/* ===== Contenido principal ===== */
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2, h3 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #6a3ea1;
+}
+
+/* Párrafos */
+p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Imágenes y videos */
+img, video, audio {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== Tablas ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+table th, table td {
+  padding: 0.8rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background: #a678d6;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background: #f3e9fa;
+}
+
+/* ===== Formularios ===== */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+input, textarea, select, button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  background: #a678d6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #6a3ea1;
+}
+
+/* ===== Pie de página ===== */
+footer {
+  background: #a678d6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+footer {
+  background-color: #a678d6;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Redes sociales en el footer */
+.social-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-footer a {
+  width: 40px;
+  height: 40px;
+  background: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+/* Instagram */
+.social-footer a.instagram {
+  color: #E4405F;
+}
+
+/* TikTok */
+.social-footer a.tiktok {
+  color: #010101;
+}
+
+/* WhatsApp */
+.social-footer a.whatsapp {
+  color: #25D366;
+}
+
+/* Hover */
+.social-footer a:hover {
+  transform: scale(1.2);
+  background: #f3e9fa;
+}
